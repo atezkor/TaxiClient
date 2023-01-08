@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mijoz</string>
+    <string name="app_name_full">Tezkor taksi</string>
+    <string name="slogan">В нужное время - в нужном месте!</string>
+    <string name="app_version">1.0</string>
+    <string name="full_version">Версия %s</string>
+    <string name="app_ready">Программа готова</string>
+
+    <!-- Views -->
+    <string name="tilni_tanlang">Tilni tanlang</string>
+    <string name="lang_uz">O&#8216;zbekcha</string>
+    <string name="lang_ru">Русский</string>
+    <string name="lang_code_uz">uz</string>
+    <string name="lang_code_ru">ru</string>
+    <string name="no_network">Сеть недоступна</string>
+    <string name="no_internet">У вас отключен интернет</string>
+    <string name="no_internet_text">Пожалуйста проверьте включен ли интернет"</string>
+    <string name="no_gps">У вас отключена геолокация</string>
+    <string name="no_gps_text">Пожалуйста проверьте включена ли геолокация и отправляйтесь в место, где вы можете подключиться к спутнику</string>
+    <string name="permissions">Разрешение</string>
+    <string name="permission_description">Для запуска программы нужен доступ к использованию некоторых функций на мобильном устройстве</string>
+    <string name="permission_location">Использование локации</string>
+    <string name="permission_sms">Получить смс</string>
+
+    <!-- Login -->
+    <string name="enter_phone_number">Введите номер телефона</string>
+    <string name="number_prefix">+998&#160;</string>
+    <string name="enter_sms_code">Введите смс код. Смс код отправлен\nна следующий номер</string>
+    <string name="login">Вход</string>
+
+    <string name="key_1">1</string>
+    <string name="key_2">2</string>
+    <string name="key_3">3</string>
+    <string name="key_4">4</string>
+    <string name="key_5">5</string>
+    <string name="key_6">6</string>
+    <string name="key_7">7</string>
+    <string name="key_8">8</string>
+    <string name="key_9">9</string>
+    <string name="key_0">0</string>
+    <string name="num2_text">ABC</string>
+    <string name="num3_text">DEF</string>
+    <string name="num4_text">GHI</string>
+    <string name="num5_text">JKL</string>
+    <string name="num6_text">MNO</string>
+    <string name="num7_text">PQRS</string>
+    <string name="num8_text">TUV</string>
+    <string name="num9_text">WXYZ</string>
+    <string name="sms_code_pattern">&#8226; &#8226; &#8226; &#8226;</string>
+
+    <!-- MapActivity -->
+    <string name="bonus_text">Бонус: %s сум</string>
+    <string name="uzs">сум</string>
+    <string name="current_address">Ваш адрес</string>
+    <string name="current_address_name">Область</string>
+    <string name="btn_booking">Заказать такси</string>
+    <string name="btn_cancel">Отменить заказ</string>
+
+    <!-- Taximeter -->
+    <string name="call_driver">Звонок водителю</string>
+    <string name="payment_amount">5000</string>
+    <string name="additional_price">(+0)</string>
+    <string name="currency_uzs">СУМ</string>
+    <string name="booking_address">Адрес клиента: </string>
+    <string name="booking_address_text">Bozor</string>
+    <string name="car_model_title">Автомобиль: </string>
+    <string name="car_model_text">Матиз</string>
+    <string name="car_number">Номер автомобиля:</string>
+    <string name="car_number_text">90A000AA</string>
+    <string name="sms_code">Смс код:</string>
+    <string name="sms_code_text">0000</string>
+
+    <!-- Dialogs and Items -->
+    <string name="exit">Выход</string>
+    <string name="address_title">Адрес: </string>
+    <string name="car_model">Автомобиль</string>
+    <string name="fare_title">За поездку: </string>
+    <string name="minimal_pay">5000 сум</string>
+    <string name="initial_payment">от %s сум</string>
+    <string name="address_name">Адрес</string>
+    <string name="booking">Заказать такси</string>
+    <string name="choose_one">Выбери один</string>
+
+    <string name="yes">Да</string>
+    <string name="error">Ошибка</string>
+    <string name="error_occurs">Произошла ошибка</string>
+    <string name="connection_error">Технические неполадки. Пожалуйста, проверьте наличие интернета</string>
+    <string name="change_phone_number">Сменить номер телефона</string>
+    <string name="ok">Понятно</string>
+    <string name="update_app">Обновите приложение</string>
+    <string name="update_app_text">Вы используете старую версию приложения, пожалуйста, обновите приложение!</string>
+    <string name="update">Обновите</string>
+    <string name="is_cancel_booking">Хотите отменить заказ?</string>
+    <string name="here">Здесь</string>
+    <string name="any_model">Любая</string>
+    <string name="trip_finished">Поездка завершена</string>
+</resources>

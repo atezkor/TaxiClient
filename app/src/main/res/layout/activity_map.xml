@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    tools:context=".ui.main.MapActivity">
+
+    <!-- Map layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="200dp"
+        android:orientation="vertical">
+
+        <org.osmdroid.views.MapView
+            android:id="@+id/osm_map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:focusable="true" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/shadow_top" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/shadow_bottom" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <!-- Menu and bonus -->
+            <LinearLayout
+                android:id="@+id/ll_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/menu_bar"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/menu_bar"
+                    android:clickable="true"
+                    android:contentDescription="@null"
+                    android:elevation="2dp"
+                    android:focusable="true"
+                    android:padding="8dp"
+                    app:srcCompat="@drawable/ic_filter_circular" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_client_bonus"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bonus_curved"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:text="@string/bonus_text"
+                    android:textColor="@color/md_grey_700"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/iv_share"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/menu_bar"
+                    android:clickable="true"
+                    android:contentDescription="@null"
+                    android:elevation="2dp"
+                    android:focusable="true"
+                    android:padding="5dp"
+                    app:srcCompat="@drawable/ic_share" />
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_address_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:shadowColor="@color/md_yellow_600"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="20"
+                android:text="@string/current_address"
+                android:textColor="@color/md_grey_800"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_current_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:shadowColor="@color/md_yellow_600"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="30"
+                android:text="@string/current_address_name"
+                android:textColor="@color/md_grey_800"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Map marker -->
+        <uz.yangilanish.client.ui.view.MapPin
+            android:id="@+id/map_pin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:translationY="-30dp" />
+
+        <!-- Search -->
+        <RelativeLayout
+            android:id="@+id/rl_search_car"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:animateLayoutChanges="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_car_model"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="200dp"
+                android:background="@drawable/bg_spin_kit_loader"
+                android:contentDescription="@null"
+                android:elevation="2dp"
+                android:padding="8dp"
+                android:visibility="invisible" />
+
+            <pl.bclogic.pulsator4droid.library.PulsatorLayout
+                android:id="@+id/pulse_loader"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:pulse_color="@color/indigo_900"
+                app:pulse_count="4"
+                app:pulse_duration="5000"
+                app:pulse_interpolator="Linear"
+                app:pulse_repeat="0"
+                app:pulse_startFromScratch="true" />
+        </RelativeLayout>
+
+        <!-- AddressList and Location button -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="end"
+            android:orientation="vertical">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btn_current_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:contentDescription="@null"
+                android:elevation="8dp"
+                android:src="@drawable/ic_map_target_curved"
+                app:maxImageSize="36dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_address_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="4dp"
+                android:clipToPadding="false"
+                android:scrollbars="none"
+                tools:itemCount="1"
+                tools:listitem="@layout/item_address" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!--  Cars list  -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_car_model_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="4dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="2dp"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:scrollbars="none"
+            tools:listitem="@layout/item_car_model" />
+
+        <Button
+            android:id="@+id/btn_booking"
+            style="@style/BookingButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:text="@string/btn_booking" />
+
+        <Button
+            android:id="@+id/btn_cancel_booking"
+            style="@style/BookingButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:background="@drawable/btn_danger"
+            android:text="@string/btn_cancel"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <!-- Device state -->
+    <uz.yangilanish.client.ui.view.ViewNoInternet
+        android:id="@+id/view_no_internet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <uz.yangilanish.client.ui.view.ViewNoGps
+        android:id="@+id/view_no_gps"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rl_progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone">
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:id="@+id/spin_kit_view"
+            style="@style/SpinKitView.Large.Circle"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="150dp"
+            android:background="@drawable/bg_spin_kit_loader"
+            android:elevation="2dp"
+            android:padding="10dp"
+            app:SpinKit_Color="@color/md_black_1000" />
+    </RelativeLayout>
+</RelativeLayout>

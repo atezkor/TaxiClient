@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_white_1000"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:viewBindingIgnore="true">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:contentDescription="@null"
+        app:srcCompat="@drawable/ic_shield" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/permissions"
+        android:textColor="@color/md_grey_800"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginTop="6dp"
+        android:gravity="center"
+        android:text="@string/permission_description"
+        android:textColor="@color/md_grey_800"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:id="@+id/btn_location_permission"
+        style="@style/ImageButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_location_status"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="5dp"
+            android:contentDescription="@null"
+            android:padding="18dp"
+            app:srcCompat="@drawable/ic_cancel"
+            app:tint="@color/md_grey_800" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/ImageButtonTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:paddingStart="0dp"
+            android:paddingEnd="15dp"
+            android:text="@string/permission_location" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_sms_permission"
+        style="@style/ImageButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_sms_status"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="5dp"
+            android:contentDescription="@null"
+            android:padding="18dp"
+            app:srcCompat="@drawable/ic_cancel"
+            app:tint="@color/md_grey_800" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/ImageButtonTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:paddingStart="0dp"
+            android:paddingEnd="15dp"
+            android:text="@string/permission_sms" />
+    </LinearLayout>
+</LinearLayout>

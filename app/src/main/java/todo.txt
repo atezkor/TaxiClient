@@ -1,0 +1,60 @@
+Topshiriqlar
+
+1. Unused files:
+    - btn_red_gradient
+    - dialog_menu
+
+2. Widget yaratish kerak:
+    - U orqali buyurtma berish
+    - Buyurtmalar soni
+
+- Resources
+    https://taxi.yandex.uz/uz_uz/
+    https://www.vecteezy.com/vector-art/4725829-online-taxi-booking-travel-service-flat-design-illustration-via-mobile-app-on-smartphone-take-someone-to-a-destination-suitable-for-background-poster-or-banner
+    https://www.svgrepo.com/collection/iconwrap-filled-duotone-interface-icons/
+    https://www.iconfinder.com/icons/5208408/arrow_forward_navigation_send_share_icon
+    https://ru.freepik.com/premium-vector/types-of-men-activities-and-recreation_9352715.htm#from_view=detail_author
+    https://dribbble.com/signup/new
+
+1. 4.16 mb
+2. 5.11 mb: After add loader library
+
+10. Add this if it is need!
+AlertDialog menuAlertDialog;
+public void showMenuAlertDialog() {
+    if (menuAlertDialog == null || !menuAlertDialog.isShowing()) {
+        AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
+        View dialogView = getLayoutInflater().inflate(R.layout.dialog_menu_main, null);
+
+        ((AppCompatTextView) dialogView.findViewById(R.id.tv_phone_number)).setText(CacheData.getClient.getPhone()));
+
+        dialogView.findViewById(R.id.ll_uz).setOnClickListener(v -> {
+            MapActivityAction mapActivityAction = MapActivityAction.this;
+            menuAlertDialog.dismiss();
+            changeLanguage("uz");
+        });
+
+        dialogView.findViewById(R.id.ll_ru).setOnClickListener(v -> {
+            changeLanguage("ru");
+            menuAlertDialog.dismiss();
+        });
+
+        dialogView.findViewById(R.id.ll_leave).setOnClickListener(v -> {
+            AuthAction.actionDestroy();
+
+            closeCurrentActivity();
+            openLoginActivity();
+        });
+
+        dialogBuilder.setView(dialogView);
+        menuAlertDialog = dialogBuilder.create();
+
+        Window window = menuAlertDialog.getWindow();
+        WindowManager.LayoutParams windowAttributes = window.getAttributes();
+        windowAttributes.gravity = Gravity.TOP;
+        window.setAttributes(windowAttributes);
+
+        menuAlertDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        menuAlertDialog.show();
+    }
+}

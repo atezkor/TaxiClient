@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="oval">
+            <gradient android:angle="270" android:centerColor="@color/md_yellow_400" android:endColor="@color/md_yellow_700" android:startColor="@color/md_yellow_700" android:type="linear" />
+        </shape>
+    </item>
+    <item android:state_pressed="false">
+        <shape android:shape="oval">
+            <gradient android:angle="270" android:centerColor="@color/md_yellow_200" android:endColor="@color/md_yellow_600" android:startColor="@color/md_yellow_600" android:type="linear" />
+        </shape>
+    </item>
+</selector>

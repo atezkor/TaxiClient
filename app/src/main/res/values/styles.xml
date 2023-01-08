@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="MainButton">
+        <item name="android:layout_marginHorizontal" tools:targetApi="o">10dp</item>
+        <item name="android:layout_marginVertical" tools:targetApi="o">5dp</item>
+        <item name="android:background">@drawable/btn_yellow</item>
+        <item name="android:elevation">2dp</item>
+        <item name="android:fontFamily">@font/circe_rounded_bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingVertical" tools:targetApi="o">15dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/md_grey_800</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="BookingButton" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_marginHorizontal" tools:targetApi="o">10dp</item>
+        <item name="android:background">@drawable/btn_booking</item>
+        <item name="android:elevation">2dp</item>
+        <item name="android:fontFamily">@font/circe_rounded_bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingVertical" tools:targetApi="o">15dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/md_grey_800</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="ImageButton">
+        <item name="android:layout_marginStart">70dp</item>
+        <item name="android:layout_marginEnd">70dp</item>
+        <item name="android:background">@drawable/btn_yellow</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="elevation">2dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="ImageButtonTextView">
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">5dp</item>
+        <item name="android:gravity">start|center_vertical|center_horizontal|center</item>
+        <item name="android:textColor">@color/md_grey_800</item>
+    </style>
+</resources>

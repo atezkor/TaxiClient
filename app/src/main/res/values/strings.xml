@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mijoz</string>
+    <string name="app_name_full">Tezkor taksi</string>
+    <string name="slogan">Istalgan vaqtda - istalgan joyda!</string>
+    <string name="app_version">1.0</string>
+    <string name="full_version">Talqin %s</string>
+    <string name="app_ready">Dastur ishlatishga tayyor</string>
+
+    <!-- Views -->
+    <string name="tilni_tanlang">Tilni tanlang</string>
+    <string name="lang_uz">O&#8216;zbekcha</string>
+    <string name="lang_ru">Русский</string>
+    <string name="lang_code_uz">uz</string>
+    <string name="lang_code_ru">ru</string>
+    <string name="no_network">Tarmoq mavjud emas</string>
+    <string name="no_internet">Internet xizmati o&#8216;chirilgan</string>
+    <string name="no_internet_text">Internet yoniqligi va hisobingizni tekshiring</string>
+    <string name="no_gps">Joylashuv xizmati (GPS) o&#8216;chirilgan</string>
+    <string name="no_gps_text">Joylashuv xizmati yoniqligini tekshiring va sun&#8217;iy yo&#8216;ldoshga ulanish imkoni bor joyga chiqing</string>
+    <string name="permissions">Ruxsatnomalar</string>
+    <string name="permission_description">Dastur ishga tushishi uchun mobil qurilmaning ba&#8217;zi funksiyalaridan foydalanishga ruxsat berishingiz kerak</string>
+    <string name="permission_location">Joylashuvdan foydalanish</string>
+    <string name="permission_sms">Kiruvchi xabarlarni o&#8216;qish</string>
+
+    <!-- Login -->
+    <string name="enter_phone_number">Telefon raqamingizni kiriting</string>
+    <string name="number_prefix">+998&#160;</string>
+    <string name="enter_sms_code">Sms kodni kiriting, sms kod\nquyidagi raqamga jo&#8216;natildi</string>
+    <string name="login">Kirish</string>
+
+    <string name="key_1">1</string>
+    <string name="key_2">2</string>
+    <string name="key_3">3</string>
+    <string name="key_4">4</string>
+    <string name="key_5">5</string>
+    <string name="key_6">6</string>
+    <string name="key_7">7</string>
+    <string name="key_8">8</string>
+    <string name="key_9">9</string>
+    <string name="key_0">0</string>
+    <string name="num2_text">ABC</string>
+    <string name="num3_text">DEF</string>
+    <string name="num4_text">GHI</string>
+    <string name="num5_text">JKL</string>
+    <string name="num6_text">MNO</string>
+    <string name="num7_text">PQRS</string>
+    <string name="num8_text">TUV</string>
+    <string name="num9_text">WXYZ</string>
+    <string name="sms_code_pattern">&#8226; &#8226; &#8226; &#8226;</string>
+
+    <!-- MapActivity -->
+    <string name="bonus_text">Bonus: %s so&#8216;m</string>
+    <string name="uzs">so&#8216;m</string>
+    <string name="current_address">Joriy manzil</string>
+    <string name="current_address_name">Viloyat</string>
+    <string name="btn_booking">Buyurtma berish</string>
+    <string name="btn_cancel">Bekor qilish</string>
+
+    <!-- Taximeter -->
+    <string name="call_driver">Haydovchiga qo&#8216;ng&#8216;iroq qilish</string>
+    <string name="payment_amount">5000</string>
+    <string name="additional_price">(+0)</string>
+    <string name="currency_uzs">SO&#8216;M</string>
+    <string name="booking_address">Buyurtma manzili</string>
+    <string name="booking_address_text">Bozor</string>
+    <string name="car_model_title">Avtomobil: </string>
+    <string name="car_model_text">Matiz</string>
+    <string name="car_number">Avtomobil raqami</string>
+    <string name="car_number_text">90A000AA</string>
+    <string name="sms_code">Sms kod</string>
+    <string name="sms_code_text">0000</string>
+
+    <!-- Dialogs and Items -->
+    <string name="exit">Chiqish</string>
+    <string name="address_title">Manzil: </string>
+    <string name="car_model">Mashina turi</string>
+    <string name="fare_title">Yo&#8216;l haqi: </string>
+    <string name="minimal_pay">5000 so&#8216;m</string>
+    <string name="initial_payment">%s so&#8216;mdan</string>
+    <string name="address_name">Manzil</string>
+    <string name="booking">Buyurtma berish</string>
+    <string name="choose_one">Birini tanlang</string>
+
+    <string name="yes">Ha</string>
+    <string name="error">Xatolik</string>
+    <string name="error_occurs">Xatolik yuz berdi</string>
+    <string name="connection_error">Texnik nosozlik, iltimos internet xizmatini tekshirib ko&#8216;ring</string>
+    <string name="change_phone_number">Telefon raqamini o&#8216;zgartirish</string>
+    <string name="ok">Tushunarli</string>
+    <string name="update_app">Ilovani yangilash</string>
+    <string name="update_app_text">Siz dasturning eski talqinidan foydalaniyapsiz, iltimos ilova yangilang!</string>
+    <string name="update">Yangilash</string>
+    <string name="is_cancel_booking">Buyurtmani bekor qilmoqchimisiz?</string>
+    <string name="here">Shu yer</string>
+    <string name="any_model">Har qanday</string>
+    <string name="trip_finished">Manzilga yetib keldingiz</string>
+</resources>

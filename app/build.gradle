@@ -1,0 +1,73 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+}
+
+android {
+    compileSdk 32
+
+    buildFeatures {
+        viewBinding true
+    }
+
+    defaultConfig {
+        applicationId "uz.yangilanish.client"
+        minSdk 21
+        targetSdk 32
+        versionCode 1
+        versionName "1.9"
+
+        buildConfigField "String", "API_URL", '"http://taksi.yanginom.uz"'
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.4.2'
+    implementation 'com.google.android.material:material:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
+    // Api
+    implementation 'com.google.code.gson:gson:2.9.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+
+    // Events
+    implementation "org.greenrobot:eventbus:3.3.1"
+
+    // Loading animation
+    implementation 'com.github.ybq:Android-SpinKit:1.4.0'
+    implementation 'pl.bclogic:pulsator4droid:1.0.3' // deprecated
+
+    // Map (Versiya oshmasin)
+    implementation 'org.osmdroid:osmdroid-android:6.1.11'
+    implementation 'com.github.mkergall:osmbonuspack:6.7.0'
+
+    // Socket
+    implementation ('io.socket:socket.io-client:2.0.1') {
+        exclude group: 'org.json', module: 'json'
+    }
+
+    // Image downloading and caching
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    // pulse animation for booking
+    implementation 'pl.bclogic:pulsator4droid:1.0.3'
+
+    testImplementation 'junit:junit:'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+}
