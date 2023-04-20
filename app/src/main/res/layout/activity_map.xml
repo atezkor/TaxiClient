@@ -123,6 +123,36 @@
             android:layout_centerInParent="true"
             android:translationY="-30dp" />
 
+        <!-- AddressList and Location button -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="end"
+            android:orientation="vertical">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btn_current_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_map_target_curved"
+                app:maxImageSize="36dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_address_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="4dp"
+                android:clipToPadding="false"
+                android:scrollbars="none"
+                tools:itemCount="1"
+                tools:listitem="@layout/item_address" />
+        </LinearLayout>
+
         <!-- Search -->
         <RelativeLayout
             android:id="@+id/rl_search_car"
@@ -156,37 +186,6 @@
                 app:pulse_repeat="0"
                 app:pulse_startFromScratch="true" />
         </RelativeLayout>
-
-        <!-- AddressList and Location button -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:gravity="end"
-            android:orientation="vertical">
-
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/btn_current_location"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
-                android:layout_marginBottom="8dp"
-                android:contentDescription="@null"
-                android:elevation="8dp"
-                android:src="@drawable/ic_map_target_curved"
-                app:maxImageSize="36dp" />
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rv_address_list"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginBottom="4dp"
-                android:clipToPadding="false"
-                android:scrollbars="none"
-                tools:itemCount="1"
-                tools:listitem="@layout/item_address" />
-        </LinearLayout>
     </RelativeLayout>
 
     <!--  Cars list  -->
