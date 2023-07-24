@@ -86,9 +86,9 @@ public class TaximeterActivity extends TaximeterActivityAction {
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
             Driver.Tariff tariff = CacheData.getTariffList().stream()
-                    .filter(t -> t.getId() == driver.getTariffId())
-                    .findAny()
-                    .orElse(null);
+                .filter(t -> t.getId() == driver.getTariffId())
+                .findAny()
+                .orElse(null);
             driver.setTariff(tariff);
         }
 

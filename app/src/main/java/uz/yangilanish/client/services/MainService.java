@@ -30,7 +30,7 @@ import uz.yangilanish.client.events.MoveLocationBus;
 import uz.yangilanish.client.events.StartSocketServiceBus;
 import uz.yangilanish.client.events.StopSocketServiceBus;
 import uz.yangilanish.client.events.TimerBus;
-import uz.yangilanish.client.network.SocketClient;
+import uz.yangilanish.client.act.socket.SocketClient;
 import uz.yangilanish.client.utils.CacheData;
 
 

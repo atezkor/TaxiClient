@@ -15,17 +15,17 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Locale;
 
+import uz.yangilanish.client.data.shared.AppPref;
 import uz.yangilanish.client.models.Company;
 import uz.yangilanish.client.ui.login.LoginActivity;
 import uz.yangilanish.client.ui.login.SmsConfirmActivity;
 import uz.yangilanish.client.ui.main.MapActivity;
 import uz.yangilanish.client.ui.splash.SplashActivity;
 import uz.yangilanish.client.ui.taximeter.TaximeterActivity;
-import uz.yangilanish.client.utils.AppPref;
 import uz.yangilanish.client.utils.CacheData;
 
 
-public class MainActivity extends AppCompatActivity implements MainActivityView {
+public class MainActivity extends AppCompatActivity implements IMainActivityView {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

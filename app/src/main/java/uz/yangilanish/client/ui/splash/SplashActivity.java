@@ -14,14 +14,14 @@ import retrofit2.Callback;
 import retrofit2.Response;
 import uz.yangilanish.client.BuildConfig;
 import uz.yangilanish.client.R;
-import uz.yangilanish.client.actions.AuthAction;
-import uz.yangilanish.client.dto.auth.CheckAuthRequest;
-import uz.yangilanish.client.dto.auth.CheckAuthResponse;
-import uz.yangilanish.client.network.ApiBuilder;
+import uz.yangilanish.client.act.actions.AuthAction;
+import uz.yangilanish.client.data.api.ApiBuilder;
+import uz.yangilanish.client.data.dto.auth.CheckAuthRequest;
+import uz.yangilanish.client.data.dto.auth.CheckAuthResponse;
+import uz.yangilanish.client.data.shared.AppPref;
 import uz.yangilanish.client.ui.layout.LayoutActivity;
 import uz.yangilanish.client.ui.view.ViewLanguage;
 import uz.yangilanish.client.ui.view.ViewPermission;
-import uz.yangilanish.client.utils.AppPref;
 
 
 @SuppressLint("CustomSplashScreen")

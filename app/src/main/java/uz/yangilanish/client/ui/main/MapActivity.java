@@ -25,7 +25,8 @@ import org.osmdroid.views.MapView;
 
 import pl.bclogic.pulsator4droid.library.PulsatorLayout;
 import uz.yangilanish.client.R;
-import uz.yangilanish.client.actions.AuthAction;
+import uz.yangilanish.client.act.actions.AuthAction;
+import uz.yangilanish.client.data.shared.AppPref;
 import uz.yangilanish.client.events.LogoutBus;
 import uz.yangilanish.client.events.MoveLocationBus;
 import uz.yangilanish.client.events.TakeBookingBus;
@@ -36,9 +37,8 @@ import uz.yangilanish.client.ui.components.CarMarker;
 import uz.yangilanish.client.ui.components.UserMarker;
 import uz.yangilanish.client.ui.view.MapPin;
 import uz.yangilanish.client.ui.view.ViewLanguage;
-import uz.yangilanish.client.utils.AppPref;
 import uz.yangilanish.client.utils.CacheData;
-import uz.yangilanish.client.utils.LocationUtil;
+import uz.yangilanish.client.utils.LocationCalculator;
 import uz.yangilanish.client.utils.NumberFormat;
 
 
@@ -161,7 +161,7 @@ public class MapActivity extends MapActivityAction {
         location.setLongitude(longitude);
         CacheData.setMapLocation(location);
 
-        Address address = LocationUtil.getAddressByLocation(latitude, longitude);
+        Address address = LocationCalculator.getAddressByLocation(latitude, longitude);
         if (address != null) {
             CacheData.setCurrentAddress(address);
             currentAddress.setText(address.getName());

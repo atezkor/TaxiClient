@@ -16,7 +16,7 @@ import uz.yangilanish.client.models.CarModel;
 import uz.yangilanish.client.models.Client;
 import uz.yangilanish.client.models.Company;
 import uz.yangilanish.client.models.Driver;
-import uz.yangilanish.client.network.SocketClient;
+import uz.yangilanish.client.act.socket.SocketClient;
 
 
 public class CacheData {
