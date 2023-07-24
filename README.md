@@ -11,13 +11,13 @@ Mijozlar uchun taksi xizmatidan foydalanish uchun qulay dastur
     - U orqali buyurtma berish
     - Buyurtmalar soni
 
-- Resources
-  https://taxi.yandex.uz/uz_uz/
-  https://www.vecteezy.com/vector-art/4725829-online-taxi-booking-travel-service-flat-design-illustration-via-mobile-app-on-smartphone-take-someone-to-a-destination-suitable-for-background-poster-or-banner
-  https://www.svgrepo.com/collection/iconwrap-filled-duotone-interface-icons/
-  https://www.iconfinder.com/icons/5208408/arrow_forward_navigation_send_share_icon
-  https://ru.freepik.com/premium-vector/types-of-men-activities-and-recreation_9352715.htm#from_view=detail_author
-  https://dribbble.com/signup/new
+3. Resources
+    - https://taxi.yandex.uz/uz_uz/
+    - https://www.vecteezy.com/vector-art/4725829-online-taxi-booking-travel-service-flat-design-illustration-via-mobile-app-on-smartphone-take-someone-to-a-destination-suitable-for-background-poster-or-banner
+    - https://www.svgrepo.com/collection/iconwrap-filled-duotone-interface-icons/
+    - https://www.iconfinder.com/icons/5208408/arrow_forward_navigation_send_share_icon
+    - https://ru.freepik.com/premium-vector/types-of-men-activities-and-recreation_9352715.htm#from_view=detail_author
+    - https://dribbble.com/signup/new
 
 1. 4.16 mb
 2. 5.11 mb: After add loader library
